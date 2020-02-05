@@ -11,23 +11,23 @@ public class TriangleUtilitiesTest {
         //Given
         String expected = "*";
         int width = 1;
-        
+
         //When
         String actual = TriangleUtilities.getRow(width);
-        
+
         //Then
         Assert.assertEquals(expected, actual);
     }
-    
+
     @Test
     public void testGetRow_ForBigWidth() {
         //Given
         String expected = "********************";
         int width = 20;
-        
+
         //When
         String actual = TriangleUtilities.getRow(width);
-        
+
         //Then
         Assert.assertEquals(expected, actual);
     }
@@ -39,11 +39,11 @@ public class TriangleUtilitiesTest {
 
         // When
         String actual = TriangleUtilities.getTriangle(1);
-        
+
         // Then
         Assert.assertEquals(expected, actual);
     }
-    
+
     @Test
     public void testGetTriangle_ForSmallTriangle() {
         // Given
@@ -52,13 +52,13 @@ public class TriangleUtilitiesTest {
                         "**\n" +
                         "***\n";
 
-        // When                
+        // When
         String actual = TriangleUtilities.getTriangle(3);
-        
+
         // Then
         Assert.assertEquals(expected, actual);
     }
-    
+
     @Test
     public void testGetTriangle_ForBigTriangle() {
         String expected =
